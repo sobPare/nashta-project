@@ -1,0 +1,21 @@
+.last {
+  text-align: center;
+  color: blue;
+  padding: 66px;
+}
+.decor {
+  text-align: center;
+  font-size: 86px;
+}
+.graph {
+  text-align: center;
+  font-size: 196px;
+  color: blue;
+}
+.current-temp {
+  font-size: 96px;
+}
+.days {
+  font-size: 76px;
+  color: blueviolet;
+}

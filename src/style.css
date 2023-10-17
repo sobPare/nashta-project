@@ -43,6 +43,9 @@ section {
 .current-temp {
   font-size: 96px;
 }
+.weather-description {
+  text-transform: capitalize;
+}
 .days {
   font-size: 76px;
   color: blueviolet;

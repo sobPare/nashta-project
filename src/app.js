@@ -37,9 +37,18 @@ function displayTemp(response) {
     "src",
     `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
-  console.log(response.data.condition.icon_url);
 }
-let apiKey = "810af8c18eeb9te5oaa24fe22fec331a";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=paris&key=${apiKey}`;
+function search(city) {
+  let apiKey = "810af8c18eeb9te5oaa24fe22fec331a";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
-axios.get(apiUrl).then(displayTemp);
+  axios.get(apiUrl).then(displayTemp);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+search("milan");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

@@ -1,3 +1,31 @@
+.nashta-weather {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #8e819c;
+  border-radius: 6px;
+}
+h1 {
+  max-width: 590px;
+  margin: 0px auto;
+  border: 1px solid #8e819c;
+  border-radius: 6px;
+  padding: 20px;
+}
+h2 {
+  max-width: 590px;
+  margin: 20px auto;
+  border: 1px solid #8e819c;
+  border-radius: 6px;
+  padding: 20px;
+}
+section {
+  max-width: 590px;
+  margin: 20px auto;
+  border: 1px solid #8e819c;
+  border-radius: 6px;
+  padding: 20px;
+}
 .last {
   text-align: center;
   color: blue;
@@ -5,7 +33,7 @@
 }
 .decor {
   text-align: center;
-  font-size: 86px;
+  font-size: 66px;
 }
 .graph {
   text-align: center;

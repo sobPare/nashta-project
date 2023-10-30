@@ -25,7 +25,7 @@
                 <div class="mb-3">
                   <label for="search" class="form-label"
                     ><ul>
-                      <li id="date">day</li>
+                      <li id="date">today</li>
                     </ul></label
                   >
                   <input
@@ -40,113 +40,38 @@
                 <button type="submit" class="btn btn-primary">search</button>
               </form>
             </div>
-            <div class="col-2 decor">logo</div>
-            <div class="col-5 last" id="city"></div>
+            <div class="col-1 decor"></div>
+            <div class="col-6 last" id="city"></div>
           </div>
         </h1>
         <h2>
           <div class="row">
-            <div class="col-4 graph">
-              <img src="" alt="icon" id="icon" />
+            <div class="col-3 graph">
+              <img src="" alt="" id="icon" />
             </div>
             <div class="col-3">
               <div class="card-body">
-                <h5 class="card-title">Current Temperature</h5>
-                <span class="card-text current-temp" id="current-temp"></span>°
+                <h5 class="card-title" id="current-text">
+                  Current Temperature
+                </h5>
+                <span class="card-text current-temp" id="current-temp"></span>
               </div>
             </div>
+            <div class="col-1 degree"></div>
             <div class="col-5">
               <ul>
-                <li>wind speed :<span id="wind-speed"></span></li>
                 <li>
-                  i mean :
-                  <span
-                    class="weather-description"
-                    id="weather-description"
-                  ></span>
+                  <span class="wind-placeholder">wind speed:</span>
+                  <span id="wind-speed"></span>
                 </li>
+                <li class="weather-description" id="weather-description"></li>
               </ul>
             </div>
           </div>
         </h2>
-        <section class="forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +1</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +2</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +3</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +4</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +5</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="card-body">
-                <h5 class="card-title">day +6</h5>
-                <p class="card-text days">
-                  <i class="lni lni-cloudy-sun"></i>
-                </p>
-                <div>
-                  <span class="max-temp">23</span>
-                  <span class="min-temp">12</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="forecast" id="forecast"></section>
         <footer>
-          <a href="https://github.com/sobPare/nashta-project"
+          <a class="git-link" href="https://github.com/sobPare/nashta-project"
             >giti giti github</a
           >
         </footer>
